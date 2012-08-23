@@ -1,0 +1,20 @@
+[core]
+	excludesfile=/home/manuel/.gitignore
+
+[user]
+	name = Manuel Schmidt
+	email = manuel@schmidtman.de
+
+[color]
+	ui=auto
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty --oneline --all --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+	lol = log --oneline --graph --decorate --all
+
