@@ -27,18 +27,9 @@ alias dj='python manage.py'
 alias djrun='dj runserver 127.0.0.1:8000'
 
 
-#
-# git stuff siehe auch .gitconfig
-#
-alias gs='git status '
-#alias ga='git add '
-alias go='git checkout '
-#alias gi='git commit '
-alias gd='git diff '
-#alias gb='git branch '
-alias gk='gitk --all&'
-
-
+# to have git commands output in english
+# http://stackoverflow.com/questions/10633564/how-does-one-change-the-language-of-the-command-line-interface-of-git
+alias git='LANG=en_US git'
 
 function parse_git_dirty {
   [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "*"
