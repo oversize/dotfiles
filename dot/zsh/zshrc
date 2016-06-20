@@ -1,0 +1,71 @@
+export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# export MANPATH="/usr/local/man:$MANPATH"
+
+export GOPATH=$HOME/gosrc
+export GOBIN=$GOPATH/bin
+
+source ~/src/antigen/antigen.zsh
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle pyenv
+
+# syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Load the theme.
+antigen theme mh
+
+# Tell antigen that you're done. 
+antigen apply
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#powerline-config tmux setup
+export DISABLE_AUTO_TITLE='true'
+export EDITOR='nvim'
+alias ckan='mono ~/bin/ckan.exe'
+alias vizsh='nvim ~/.zshrc'
+alias szs='source ~/.zshrc'
+
+bindkey '[D' beginning-of-line
+bindkey '[C' end-of-line
+
+# ZSH Hooks
+function precmd {
+  # vcs_info
+  # Put the string "hostname::/full/directory/path" in the title bar:
+  #echo -ne "\e]2;$PWD\a"
+  # Put the parentdir/currentdir in the tab
+  echo -ne "\e]1;$PWD:h:t/$PWD:t\a"
+}
+
+# There is propably a better way
+source src/dotfiles/dot/zsh/tmux_functions.zsh
+
+
