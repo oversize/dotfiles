@@ -66,6 +66,6 @@ function precmd {
 }
 
 # There is propably a better way
-source src/dotfiles/dot/zsh/tmux_functions.zsh
+source /Users/msch/src/dotfiles/dot/zsh/tmux_functions.zsh
 
 
