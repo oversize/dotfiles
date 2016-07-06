@@ -1,50 +1,28 @@
-scriptencoding utf-8
-set encoding=utf-8
-set nocompatible              " be iMproved, required   
-filetype off                  " required
-syntax on
+set nocompatible
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.config/nvim/bundle/Vundle.vim
-"call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-call vundle#begin('~/.config/nvim/bundle/')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'https://github.com/scrooloose/nerdtree.git'
-Plugin 'https://github.com/vim-airline/vim-airline.git'
-Plugin 'jistr/vim-nerdtree-tabs'
-
-Plugin 'https://github.com/ctrlpvim/ctrlp.vim'
-
+call plug#begin('~/.config/nvim/plugged/')
+Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/ctrlpvim/ctrlp.vim'
+Plug 'ryanoasis/vim-devicons'
 " Typescript Stuff. 
 " TS completion using th TSServer
-Plugin 'https://github.com/Quramy/tsuquyomi'
+Plug 'https://github.com/Quramy/tsuquyomi'
 " TS Syntax
-Plugin 'https://github.com/leafgarland/typescript-vim'
+Plug 'https://github.com/leafgarland/typescript-vim'
 
 " colorschemes:
-" Plugin 'https://github.com/Lokaltog/vim-distinguished'
-Plugin 'https://github.com/nanotech/jellybeans.vim'
+Plug 'https://github.com/Lokaltog/vim-distinguished'
+Plug 'https://github.com/nanotech/jellybeans.vim'
 
 " all of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line<Paste>
+call plug#end()
+" -----------------------------------------------
 
+filetype plugin indent on
+syntax on
 " Make Ctrl-N toggle NerdTabs
-nmap <C-n> :NERDTreeTabsToggle<CR> 
+nmap <C-n> :NERDTreeToggle<CR> 
 
 " What is the leader Key? in short -> \
 " http://usevim.com/2012/07/20/vim101-leader/
@@ -54,7 +32,7 @@ nmap <leader>l :set list!<CR>
 set list
 " Make Tabs, spaces and eol characters nicer
 " set listchars="tab:▸,eol:¬"
-set listchars=eol:~,tab:>-,trail:.
+set listchars=tab:>-,space:.,trail:.,eol:~
 "set listchars=eol:~,tab:->extends:>
 
 " Expand tabs to spaces
