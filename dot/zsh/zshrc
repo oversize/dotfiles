@@ -5,12 +5,10 @@ export GOPATH=$HOME/gosrc
 export GOBIN=$GOPATH/bin
 
 source ~/src/antigen/antigen.zsh
-# Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
-# Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
-antigen bundle pyenv
+#antigen bundle pyenv
 
 # syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -20,6 +18,7 @@ antigen theme mh
 
 # Tell antigen that you're done. 
 antigen apply
+
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
