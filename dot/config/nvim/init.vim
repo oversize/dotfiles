@@ -68,4 +68,5 @@ set noswapfile
 "
 map <PageUp> :tabp<CR>
 map <PageDown> :tabn<CR>
+let g:ctrlp_match_window = 'results:100'
 
