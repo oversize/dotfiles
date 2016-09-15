@@ -67,5 +67,5 @@ function precmd {
 # There is propably a better way
 source /Users/msch/src/dotfiles/dot/zsh/tmux_functions.zsh
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+# fpath=(/usr/local/share/zsh-completions $fpath)
 
