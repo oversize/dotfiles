@@ -68,5 +68,11 @@ set noswapfile
 "
 map <PageUp> :tabp<CR>
 map <PageDown> :tabn<CR>
-let g:ctrlp_match_window = 'results:100'
 
+let g:ctrlp_match_window = 'results:100'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+"let g:ctrlp_custom_ignore = {
+"  \ 'dir':  '\v[\/]\.(git|hg|svn)$\|\build',
+"  \ 'file': '\v\.(exe|so|dll)$',
+"  \ 'link': 'some_bad_symbolic_links',
+"  \ }
