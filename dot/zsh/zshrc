@@ -1,5 +1,7 @@
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/Users/msch/Library/Python/2.7/bin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
+
 
 export GOPATH=$HOME/gosrc
 export GOBIN=$GOPATH/bin
@@ -8,7 +10,7 @@ source ~/src/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 antigen bundle git
-#antigen bundle pyenv
+antigen bundle pyenv
 
 # syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -51,6 +53,7 @@ export EDITOR='nvim'
 alias ckan='mono ~/bin/ckan.exe'
 alias vizsh='nvim ~/.zshrc'
 alias szs='source ~/.zshrc'
+alias ppt='papertrail'
 
 bindkey '[D' beginning-of-line
 bindkey '[C' end-of-line
@@ -67,5 +70,27 @@ function precmd {
 # There is propably a better way
 source /Users/msch/src/dotfiles/dot/zsh/tmux_functions.zsh
 
-# fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Setup cdg function shell bookmarks with fzf
+# https://dmitryfrank.com/articles/shell_shortcuts
+# ------------------
+unalias cdg 2> /dev/null
+cdg() {
+   local dest_dir=$(cdscuts_glob_echo | fzf )
+   if [[ $dest_dir != '' ]]; then
+      cd "$dest_dir"
+   fi
+}
+export -f cdg > /dev/null
+
+cdg-add () {
+    local curr_dir="${PWD} # $*"
+    if ! grep -Fxq "$curr_dir" ~/.cdg_paths; then
+        echo "$curr_dir" >> ~/.cdg_paths
+    fi
+}
 
