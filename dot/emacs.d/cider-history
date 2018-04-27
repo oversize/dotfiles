@@ -1,0 +1,5 @@
+;; -*- coding: utf-8-unix -*-
+;; Automatically written history of CIDER REPL session
+;; Edit at your own risk
+
+("quit" "(map inc (1 2 3))" "(+ 1 2)" "(clojure-noob.core.main)")

@@ -1,0 +1,78 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/msch/src/github.com/hello-clojure-world/clojure-noob/" . "src/")
+ ("/Users/msch/src/github.com/hello-clojure-world/clojure-noob/src/" . "clojure_noob/")
+ ("/Users/msch/src/github.com/hello-clojure-world/" . "clojure-noob/")
+ ("/Users/msch/src/platform/" . "docs/")
+ ("/Users/msch/src/hugo-plays/schmidtman/" . "archetypes/")
+ ("/Users/msch/src/hugo-plays/" . "schmidtman/")
+ ("/Users/msch/src/golang/" . "gopro1/")
+ ("/Users/msch/src/github.com/" . "hello-clojure-world/")
+ ("/Users/msch/src/" . "github.com/")
+ ("/Users/msch/" . "src/")
+ ("/Users/msch/.emacs.d/" . "customizations/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/msch/src/github.com/hello-clojure-world/clojure-noob/src/clojure_noob/"
+ "/Users/msch/src/github.com/hello-clojure-world/clojure-noob/"
+ "/Users/msch/src/github.com/hello-clojure-world/"
+ "/Users/msch/src/platform/docs/"
+ "/Users/msch/src/platform/application/"
+ "/Users/msch/.emacs.d/customizations/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "core.clj"
+ "project.clj"
+ "hello-clojure-world.iml"
+ "migrate-vm-to-php-5-dot-6.md"
+ "apidocs.md"
+ "Bootstrap.php"
+ "README.md"
+ "ui.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/msch/src/github.com/hello-clojure-world/clojure-noob/" (23207 41809 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" "clojure-noob.iml" "CHANGELOG.md" ".lein-repl-history" ".idea/" ".gitignore" "../" "./")
+
+ ("/Users/msch/" (23207 50137 0 0) "VirtualBox VMs/" "vicampo_stock_processes.json" "vicampo.dev.cer" "tmp/" "src/" "soapui-settings.xml" "Snapshots/" "Public/" "PS-162.2380.11_msch_03.08.2017_11.00.48.zip" "Pictures/" "Parcel-Force-Express-Link-soapui-project.xml" "Music/" "Movies/" "mail/" "Library/" "kurzprofil.txt" "kong.conf" "java_error_in_phpstorm.hprof" "IdeaProjects/" "hottub/" "gosrc/" "Google Drive msch/" "Google Drive File Stream/" "Google Drive/" "Fiddler2/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "default-soapui-workspace.xml" "bin/" "bb_pipeline_id_rsa.pub" "bb_pipeline_id_rsa" "authorized_keys" "Applications/" "antigen.zsh" "angular" "_curlrc" ".zshrc.pre-oh-my-zsh" ".zshrc" ".zshenv" ".zsh_history" ".zsh-update" ".ZPLViewer/" ".zenmap-etc/" ".zcompdump" ".yjp/" ".wget-hsts" ".weechat/" ".WebIde90/" ".w3m/" ".vscode/" ".viminfo" ".vim/" ".vagrant.d/" ".v8flags.5.0.71.35.msch.json" ".v8flags.4.6.85.28.msch.json" ".ungitrc" ".Trash/" ".tmuxinator/" ".tmux.conf" ".sup/" ".subversion/" ".stCommitMsg" ".ssh/" ".sqlectron.json" ".spike/" ".soapuios/" ".sh_history" ".rnd" ".pythonhist" ".python_history" ".pylint.d/" ".pyenv/" ".putty/" ".psql_history" ".pinerc" ".pgadmin/" ".pdepend/" ".papertrail.yml" ".packer.d/" ".oracle_jre_usage/" ".oh-my-zsh/" ".offlineimaprc.advanced" ".offlineimaprc" ".offlineimap/" ".nylas/" ".npm/" ".node_repl_history" ".node-gyp/" ".netrc" ".NERDTreeBookmarks" ".mono/" ".m2/" ".local/" ".lnav/" ".linkchecker/" ".lesshst" ".lein/" ".keepassx/" ".jspm/" ".ipython/" ".idea/" ".hyper_plugins/" ".hyper.js" ".httpie/" ".hhvm.hhbc" ".hgignore_global" ".helium/" ".gvimrc" ".gradle/" ".gnupg/" ".gitkraken/" ".gitk" ".gitignore_global" ".gitignore" ".giteye/" ".gitconfig" ".gem/" ".fzf.zsh" ".fzf.bash" ".ethash/" ".emacs.d/" ".electron/" ".ecs/" ".eclipse_keyring" ".eclipse/" ".DS_Store" ".dropbox/" ".docker/" ".dbeaver4/" ".dbeaver-drivers/" ".cups/" ".config/" ".composer/" ".clojure/" ".CFUserTextEncoding" ".cdg_paths" ".cargo/" ".cache/" ".blockdiagrc" ".bashrc" ".bash_profile" ".bash_history" ".aws/" ".awless/" ".atom/" ".antigen/" ".ansible_galaxy" ".ansible-console_history" ".ansible/" ".android/" ".adobe/" ".addressbook" ".ackrc" "../" "./")
+
+ ("/Users/msch/src/github.com/hello-clojure-world/clojure-noob/src/clojure_noob/" (23201 44668 0 0) "core.clj" "../" "./")
+
+ ("/Users/msch/src/github.com/hello-clojure-world/clojure-noob/src/" (23201 44668 0 0) "clojure_noob/" "../" "./")
+
+ ("/Users/msch/src/github.com/" (23207 36543 0 0) "schmidtman.de/" "oversize.github.io/" "lua-turoial/" "linkchecker/" "hello-clojure-world/" "gradle-demo/" "alacritty/" "../" "./")
+
+ ("/Users/msch/src/platform/docs/" (23206 34298 0 0) "widget/" "vps-api/" "vicampo-git-flow.rst" "vagrant.rst" "ui/" "testing.rst" "stock-availability-cache.rst" "snowplow-master-plan.org" "simulate-stock.rst" "search-gone-bad.rst" "migrate-vm-to-php-5-dot-6.md" "metrics.org" "making-things-with-data.rst" "make-a-microservice.rst" "linting-php-files-in-bitbucket-pipelines.rst" "index.rst" "cross-sell-recommendations.rst" "conf.py" "apidocs.rst" "apidocs.md" "_build/" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/msch/src/platform/application/" (23162 55940 0 0) "modules/" "layouts/" "languages/" "interfaces/" "config/" "Bootstrap.php" "App.php" ".DS_Store" "../" "./")
+
+ ("/Users/msch/src/platform/" (23206 35741 0 0) "vendor/" "var/" "Vagrantfile" "tests/" "sonar-project.properties" "solr5/" "solr/" "Shipment_cost_update.csv" "rsync_excludes.txt" "README.md" "public/" "phpunit.xml.dist" "phpunit.xml" "phpunit-sonar.xml" "packer/" "package.json" "node_modules/" "library/" "Gemfile.lock" "Gemfile" "fe-templates/" "docs/" "dist/" "dev/" "deployment_id" "config_production.rb" "config.rb" "composer.json" "cli.php" "cache.properties" "build/" "bitbucket-pipelines.yml" "bin/" "avocado.gif" "appspec.yml" "application/" ".vagrant/" ".sass-cache/" ".pki/" ".idea/" ".gitignore" ".git/" ".env.dist" ".DS_Store" "../" "./")
+
+ ("/Users/msch/src/hugo-plays/schmidtman/archetypes/" (22480 30280 0 0) "../" "./")
+
+ ("/Users/msch/src/hugo-plays/schmidtman/" (22480 30335 0 0) "themes/" "static/" "layouts/" "data/" "content/" "config.toml" "archetypes/" ".git/" "../" "./")
+
+ ("/Users/msch/src/hugo-plays/" (22480 30280 0 0) "schmidtman/" "../" "./")
+
+ ("/Users/msch/src/golang/gopro1/" (23053 33274 0 0) "../" "./")
+
+ ("/Users/msch/src/golang/" (23053 33274 0 0) "gopro1/" "../" "./")
+
+ ("/Users/msch/src/github.com/hello-clojure-world/" (23206 10737 0 0) "schmidtman/" "README.md" "hello-clojure-world.iml" "clojure-noob/" ".idea/" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/msch/src/" (23168 45791 0 0) "zenimp/" "winecc-search-scraper/" "webhook-listener/" "vicampo.de/" "typo3/" "tmuxp-examples/" "tmuxp/" "spike-plays/" "sphinx-swagger/" "solr-server/" "SoapUiDHLProject/" "schmidtman.de/" "rtdsphinx-php/" "prezto/" "powerline-fonts/" "playground/" "platform2/" "platform-master-1451900700.zip" "platform-docs-docker-image/" "platform-docs/" "platform-browser-tests/" "platform/" "osx/" "nodejs-tsexpressnode/" "nodejs-plays/" "nodejs-aws-sdk/" "keybase.io/" "jekyll/" "janpaepke-ScrollMagic-a4cbf37/" "ios_osx/" "hugo-plays/" "heroku/" "hackplays/" "golang/" "github.com/" "git-test-repository/" "git-hooks/" "electron-quick-start/" "dotfiles/" "docker/" "deploy/" "datafactory-cargo-parser/" "cakephp-docs/" "blessed-contrib/" "aws-codedeploy-samples-master.zip" "aws-codedeploy-samples-master/" "antigen/" "ansible-packer-images/" "angular/" "_git/" ".DS_Store" "../" "./")
+
+ ("/Users/msch/.emacs.d/" (23206 60334 0 0) "themes/" "README.md" "projectile-bookmarks.eld" "init.el" "ido.last" "elpa/" "customizations/" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" "../" "./")
+
+ ("/Users/msch/.emacs.d/customizations/" (23206 31674 0 0) "ui.el" "shell-integration.el" "setup-js.el" "setup-clojure.el" "navigation.el" "misc.el" "elisp-editing.el" "editing.el" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

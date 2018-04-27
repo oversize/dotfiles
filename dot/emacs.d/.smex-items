@@ -1,16 +1,25 @@
 
 ;; ----- smex-history -----
 (
- cd
- 5x5
- arp
- dbx
+ package-list-packages
+ cider-jack-in
+ dired
+ pwd
  dig
- erc
- ert
+ package-refresh-contents
+ customize-themes
 )
 
 ;; ----- smex-data -----
 (
- 
+ (paredit-recenter-on-defun . 1)
+ (irc . 1)
+ (dired . 5)
+ (enable-theme . 1)
+ (customize-themes . 2)
+ (package-refresh-contents . 1)
+ (package-list-packages . 4)
+ (dig . 1)
+ (pwd . 1)
+ (cider-jack-in . 5)
 )

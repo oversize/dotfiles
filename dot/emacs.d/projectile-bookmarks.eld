@@ -1,0 +1,1 @@
+("~/src/dotfiles/" "~/src/platform/" "~/src/github.com/hello-clojure-world/" "~/src/nodejs-aws-sdk/" "~/src/schmidtman.de/")
