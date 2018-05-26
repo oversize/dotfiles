@@ -23,7 +23,8 @@ antigen apply
 #export SPACESHIP_TIME_SHOW=true
 
 ###############################
-
+source ~/src/dotfiles/dot/zsh/fstash.zsh
+source ~/src/dotfiles/dot/zsh/git.zsh
 
 
 # You may need to manually set your language environment
@@ -58,14 +59,12 @@ antigen apply
 #bindkey '[D' beginning-of-line
 #bindkey '[C' end-of-line
 
-
 # There is propably a better way
 #source /Users/msch/src/dotfiles/dot/zsh/tmux_functions.zsh
 
 #fpath=(/usr/local/share/zsh-completions $fpath)
 
-
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Setup cdg function shell bookmarks with fzf
 # https://dmitryfrank.com/articles/shell_shortcuts
