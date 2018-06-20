@@ -38,7 +38,11 @@ vars PYENV_ROOT and PATH to have pyenv installed. Now install in shell by
 calling penv init in shells startup here .zshrc 
 Way down of the file since it modifies PATH. 
 
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PATH:$PYENV_ROOT/bin"
     eval "$(pyenv init -)"
+
+The global version for pyenv is written down to $PYENV_ROOT/.version (pyenv global)
 
 
 __fzf and fstash__ 

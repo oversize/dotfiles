@@ -1,9 +1,11 @@
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-#export PATH="/Users/msch/Library/Python/2.7/bin:$PATH"
 #export PATH="/Users/msch/gosrc/bin:/Users/msch/bin:$PATH"
 #export MANPATH="/usr/local/man:$MANPATH"
-#export GOPATH=$HOME/gosrc
-#export GOBIN=$GOPATH/bin
+
+# GO is installed in /usr/local/go -> GOROOT
+export GOPATH=$HOME/gosrc
+export PATH="$GOPATH/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 ###############################
 # Antigen
@@ -85,6 +87,15 @@ source ~/src/dotfiles/dot/zsh/git.zsh
     #fi
 #}
 
-#eval "$(pyenv init -)"
-#export HOMEBREW_GITHUB_API_TOKEN="450bc6672beb266581a2e6c1036db345c6dc2241"
-# export PATH="/usr/local/opt/ruby@2.3/bin:$PATH"
+eval "$(direnv hook zsh)"
+
+# pyenv manages python environments
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PATH:$PYENV_ROOT/bin"
+eval "$(pyenv init -)"
+
+# Same thing for ruby
+# RBEnv uses a plugin  in plugins which is another git repo that builds ruby versions
+export RBENV_ROOT="$HOME/.rbenv"
+export PATH="$PATH:$RBENV_ROOT/bin"
+eval "$(rbenv init -)"
