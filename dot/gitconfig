@@ -10,6 +10,9 @@
     ui = auto
 
 [alias]
+    lol = log --oneline  --graph  --all --decorate
     hist = log --pretty --oneline --all --graph --date=short
     type = cat-file -t
     dump = cat-file -p
+[cola]
+	spellcheck = false

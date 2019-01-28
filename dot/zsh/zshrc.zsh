@@ -1,4 +1,5 @@
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="~/.fzf/bin:$PATH"
 #export PATH="/Users/msch/gosrc/bin:/Users/msch/bin:$PATH"
 #export MANPATH="/usr/local/man:$MANPATH"
 
@@ -87,7 +88,7 @@ source ~/src/dotfiles/dot/zsh/git.zsh
     #fi
 #}
 
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
 
 # pyenv manages python environments
 export PYENV_ROOT="$HOME/.pyenv"
@@ -99,3 +100,7 @@ eval "$(pyenv init -)"
 export RBENV_ROOT="$HOME/.rbenv"
 export PATH="$PATH:$RBENV_ROOT/bin"
 eval "$(rbenv init -)"
+
+# add Pulumi to the PATH
+#export PATH=$PATH:$HOME/.pulumi/bin
+

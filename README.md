@@ -1,28 +1,55 @@
-
 # Some of my dotfiles
 
 And notes, because i always keep losing them!
-While i set up a mint VM and reworked alot of the files here. 
+~~While i set up a mint VM and reworked alot of the files here.~~
+I reworked this VM to stay with ubuntu. For the sake of my little mind
+and the need to not have to learn new things for everyday tasks.
 
-## Terms and Tools
+Therefore i decided to, stick with ubuntu, and ditch all the complicated zsh
+config stuff in favor of fish shell.
 
-Some Terminology and Tools:
 
-__ZSH Shell (or why not Bash)__
+## Link Files
+
+~/.zshrc -> dot/zsh/zshrc.zsh
+~/.tmuc.conf -> dot/
+
+## Fish Shell
+
+i used to use zsh, but never realy invested in learning it. Which
+is bad and kind of defeats the purpose i suppose.
+
+
+## 'fzf' the fuzzy finder
+
+A general purpose command line fuzzy finder, which you have not yet made
+real use of other than look cool. Well no, i do like the reverse search of it though ...
+
+Clone repo into ~/.fzf
+https://github.com/junegunn/fzf
+
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
+## Old ZSH stuff
+
+__ZSH Shell__
 
 The folder dot/zsh/ keeps the zsh stuff.  The zshrc.zsh is the one meant to be
-linked as *~/.zshrc*. 
+linked as *~/.zshrc*.
+
+
 
 __Antigen__
 
-Manages what oh-my-zsh used to do. Now i use antigen to better manage zsh plugins.  
+Manages what oh-my-zsh used to do. Now i use antigen to better manage zsh plugins.
 
 http://antigen.sharats.me/
 https://github.com/zsh-users/antigen
 
 Find plugins from ohmyzsh: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
 
-__Spaceship Prompt__ 
+__Spaceship Prompt__
 
 A nice ZSH prompt/tool/config (whatever) thing: https://denysdovhan.com/spaceship-prompt/
 
@@ -35,8 +62,8 @@ __pyenv manages python versions__
 
 Copy/clone the pyenv folder into ~/.pyenv and set/rest environment
 vars PYENV_ROOT and PATH to have pyenv installed. Now install in shell by
-calling penv init in shells startup here .zshrc 
-Way down of the file since it modifies PATH. 
+calling penv init in shells startup here .zshrc
+Way down of the file since it modifies PATH.
 
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PATH:$PYENV_ROOT/bin"
@@ -45,9 +72,9 @@ Way down of the file since it modifies PATH.
 The global version for pyenv is written down to $PYENV_ROOT/.version (pyenv global)
 
 
-__fzf and fstash__ 
+__fzf and fstash__
 
-Some realy nice tools that actually are the reason i always wanted to properly learn zsh. Initialy i used fzf only for 
+Some realy nice tools that actually are the reason i always wanted to properly learn zsh. Initialy i used fzf only for
 a nice revers shell history search.
 
 See the Website yourself: https://github.com/junegunn/fzf
