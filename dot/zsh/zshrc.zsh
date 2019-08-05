@@ -1,5 +1,7 @@
+
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="~/.fzf/bin:$PATH"
+
 #export PATH="/Users/msch/gosrc/bin:/Users/msch/bin:$PATH"
 #export MANPATH="/usr/local/man:$MANPATH"
 
@@ -11,15 +13,25 @@ export PATH="$HOME/bin:$PATH"
 ###############################
 # Antigen
 # Load plugins from https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
-source ~/src/dotfiles/dot/zsh/antigen.zsh
-antigen use oh-my-zsh
- 
-antigen bundle zsh-users/zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
-antigen bundle git
-#antigen bundle pyenv
-antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship 
-antigen apply
+#source ~/src/dotfiles/dot/zsh/antigen.zsh
+##antigen use oh-my-zsh
+#
+#antigen bundle zsh-users/zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
+#antigen bundle git
+#
+##antigen bundle pyenv
+#antigen theme https://github.com/denysdovhan/spaceship-prompt spaceship
+#antigen apply
+# ----- DISABLED ANTIGEN ------
+# Start using prezto https://github.com/sorin-ionescu/prezto
+#
+# /home/msch/.zprezto/runcoms
+#
 
+
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
 ###############################
 # Spaceship prompt configs
@@ -28,7 +40,6 @@ antigen apply
 ###############################
 source ~/src/dotfiles/dot/zsh/fstash.zsh
 source ~/src/dotfiles/dot/zsh/git.zsh
-
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -45,19 +56,6 @@ source ~/src/dotfiles/dot/zsh/git.zsh
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-#powerline-config tmux setup
-#export DISABLE_AUTO_TITLE='true'
-#export EDITOR='vim'
 
 #bindkey '[D' beginning-of-line
 #bindkey '[C' end-of-line
@@ -90,17 +88,19 @@ source ~/src/dotfiles/dot/zsh/git.zsh
 
 #eval "$(direnv hook zsh)"
 
-# pyenv manages python environments
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PATH:$PYENV_ROOT/bin"
-eval "$(pyenv init -)"
+if [[ -d $HOME/.pyenv ]]; then
+    # pyenv manages python environments
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PATH:$PYENV_ROOT/bin"
+    eval "$(pyenv init -)"
+fi
 
 # Same thing for ruby
 # RBEnv uses a plugin  in plugins which is another git repo that builds ruby versions
-export RBENV_ROOT="$HOME/.rbenv"
-export PATH="$PATH:$RBENV_ROOT/bin"
-eval "$(rbenv init -)"
+#if [[ -d $HOME/.rbenv ]]; then
+#    export RBENV_ROOT="$HOME/.rbenv"
+#    export PATH="$PATH:$RBENV_ROOT/bin"
+#    eval "$(rbenv init -)"
+#fi
 
 # add Pulumi to the PATH
-#export PATH=$PATH:$HOME/.pulumi/bin
-

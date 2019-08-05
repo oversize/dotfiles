@@ -12,13 +12,7 @@ config stuff in favor of fish shell.
 ## Link Files
 
 ~/.zshrc -> dot/zsh/zshrc.zsh
-~/.tmuc.conf -> dot/
-
-## Fish Shell
-
-i used to use zsh, but never realy invested in learning it. Which
-is bad and kind of defeats the purpose i suppose.
-
+~/.tmux.conf -> dot/
 
 ## 'fzf' the fuzzy finder
 
@@ -31,28 +25,27 @@ https://github.com/junegunn/fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-## Old ZSH stuff
+## ZSH stuff
 
 __ZSH Shell__
 
 The folder dot/zsh/ keeps the zsh stuff.  The zshrc.zsh is the one meant to be
 linked as *~/.zshrc*.
 
+__prezto__
+
+https://github.com/sorin-ionescu/prezto
+
+/home/msch/.zprezto/runcoms
+
+prezto-contrib has some nice features https://github.com/belak/prezto-contrib
 
 
-__Antigen__
-
-Manages what oh-my-zsh used to do. Now i use antigen to better manage zsh plugins.
-
-http://antigen.sharats.me/
-https://github.com/zsh-users/antigen
-
-Find plugins from ohmyzsh: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+Plugins from ohmyzsh: https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
 
 __Spaceship Prompt__
 
 A nice ZSH prompt/tool/config (whatever) thing: https://denysdovhan.com/spaceship-prompt/
-
 
 Displays useful information in the shell about git and many other things, eg. aws named cli profiles:
 
