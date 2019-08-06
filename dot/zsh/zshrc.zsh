@@ -1,6 +1,7 @@
 
 export PATH="/usr/local/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="~/.fzf/bin:$PATH"
+export PATH="/home/msch/src/vodafone/dxl-aws-config/bin:$PATH"
 
 #export PATH="/Users/msch/gosrc/bin:/Users/msch/bin:$PATH"
 #export MANPATH="/usr/local/man:$MANPATH"
@@ -93,6 +94,7 @@ if [[ -d $HOME/.pyenv ]]; then
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PATH:$PYENV_ROOT/bin"
     eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
 fi
 
 # Same thing for ruby
