@@ -32,7 +32,7 @@ __ZSH Shell__
 The folder dot/zsh/ keeps the zsh stuff.  The zshrc.zsh is the one meant to be
 linked as *~/.zshrc*.
 
-__prezto__
+https://gist.github.com/laggardkernel/4a4c4986ccdcaf47b91e8227f9868ded
 
 https://github.com/sorin-ionescu/prezto
 
@@ -51,7 +51,19 @@ Displays useful information in the shell about git and many other things, eg. aw
 
 https://docs.aws.amazon.com/cli/latest/userguide/cli-multiple-profiles.html
 
-__pyenv manages python versions__
+
+__fzf and fstash__
+
+Some realy nice tools that actually are the reason i always wanted to properly learn zsh. Initialy i used fzf only for
+a nice revers shell history search.
+
+See the Website yourself: https://github.com/junegunn/fzf
+
+fstash is a zsh function that uses fzf. See the fzf wiki for more:
+https://github.com/junegunn/fzf/wiki/examples
+
+
+## Pyenv
 
 Copy/clone the pyenv folder into ~/.pyenv and set/rest environment
 vars PYENV_ROOT and PATH to have pyenv installed. Now install in shell by
@@ -63,14 +75,3 @@ Way down of the file since it modifies PATH.
     eval "$(pyenv init -)"
 
 The global version for pyenv is written down to $PYENV_ROOT/.version (pyenv global)
-
-
-__fzf and fstash__
-
-Some realy nice tools that actually are the reason i always wanted to properly learn zsh. Initialy i used fzf only for
-a nice revers shell history search.
-
-See the Website yourself: https://github.com/junegunn/fzf
-
-fstash is a zsh function that uses fzf. See the fzf wiki for more:
-https://github.com/junegunn/fzf/wiki/examples

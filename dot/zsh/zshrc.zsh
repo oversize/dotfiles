@@ -10,6 +10,9 @@ export PATH="/home/msch/src/vodafone/dxl-aws-config/bin:$PATH"
 export GOPATH=$HOME/gosrc
 export PATH="$GOPATH/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+
 
 ###############################
 # Antigen
@@ -94,15 +97,5 @@ if [[ -d $HOME/.pyenv ]]; then
     export PYENV_ROOT="$HOME/.pyenv"
     export PATH="$PATH:$PYENV_ROOT/bin"
     eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
+    export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
 fi
-
-# Same thing for ruby
-# RBEnv uses a plugin  in plugins which is another git repo that builds ruby versions
-#if [[ -d $HOME/.rbenv ]]; then
-#    export RBENV_ROOT="$HOME/.rbenv"
-#    export PATH="$PATH:$RBENV_ROOT/bin"
-#    eval "$(rbenv init -)"
-#fi
-
-# add Pulumi to the PATH
