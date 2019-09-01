@@ -14,5 +14,37 @@
     hist = log --pretty --oneline --all --graph --date=short
     type = cat-file -t
     dump = cat-file -p
+    co = checkout
+    count = shortlog -sn
+    g = grep --break --heading --line-number
+    gi = grep --break --heading --line-number -i
+    changed = show --pretty=\"format:\" --name-only
+    fm = fetch-merge
+    pr = open-pr
+    unstage = reset HEAD --
+    uncommit = reset --soft HEAD
+    purge = clean -fd
+    please = push --force-with-lease
+    commend = commit --amend --no-edit
+    fpr = fetch-pr
+    lga = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lt = log --tags --decorate --simplify-by-decoration --oneline
+    ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+    glog= log --oneline --decorate --graph
+    ll= log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
 [cola]
 	spellcheck = false
+
+[merge]
+  ff = only
+
+[branch]
+  autosetupmerge = true
+  autosetuprebase = always
+
+[credential]
+    helper = !aws codecommit credential-helper $@
+    UseHttpPath = true
