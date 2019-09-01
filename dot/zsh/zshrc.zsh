@@ -90,7 +90,7 @@ source ~/src/dotfiles/dot/zsh/git.zsh
     #fi
 #}
 
-#eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 if [[ -d $HOME/.pyenv ]]; then
     # pyenv manages python environments
